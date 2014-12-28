@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App" ng-controller="appController">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,21 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Pelusa</h1>
+    <div class="content">
+      <div ng-view></div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/services/title.js"></script>
+    <script src="assets/js/route.js"></script>
+    <script src="assets/js/controllers/app.js"></script>
+    <script src="assets/js/controllers/home.js"></script>
+    <script src="assets/js/controllers/veterinary.js"></script>
   </body>
 </html>
