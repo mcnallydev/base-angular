@@ -1,18 +1,23 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    serve: {
-      options: {
-        port: 9000,
-        hostname: 'localhost',
-        serve: {
-          path: './'
-        },
-        livereload: 35729
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          base: {
+            path: './',
+            options: {
+              index: 'index.html',
+              maxAge: 300000
+            }
+          }
+        }
       }
     }
   });
-  grunt.loadNpmTasks('grunt-serve');
+
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.registerTask('default', [
-    'serve'
+    'connect::keepalive'
   ]);
 };
