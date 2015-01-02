@@ -5,11 +5,5 @@ app.config(function($routeProvider) {
   .when('/', {
     templateUrl: 'views/home.html',
     controller: 'homeController'
-  })
-
-  // veterinary page
-  .when('/veterinary', {
-    templateUrl: 'views/veterinary.html',
-    controller: 'veterinaryController'
   });
 });
