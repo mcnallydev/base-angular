@@ -1,5 +1,5 @@
-cat-app
-=======
+AngularJS Base
+==============
 
 ## run project
 
